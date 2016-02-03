@@ -3,42 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <nav class="main-navigation">
+      <div class="container clearfix">
+        <nav class="main-navigation"> <!--Только заметил - там же перед всеми ссылками еще есть логотип магазина. Как его сюда поставить правильней? -->
           <a href="#">Каталог</a>
           <a href="#">Доставка и оплата</a>
           <a href="#">О компании</a>
         </nav>
         <div class="user-block">
-          <a class="search"></a>
-          <a class="enter">Вход</a>
-          <a class="cart">Пусто</a>
+          <a class="search" href="#"></a>
+          <a class="enter" href="#">Вход</a>
+          <a class="cart" href="#">Пусто</a>
         </div>
-      </div>
-      <div class="work-hours">
-        <p>
-          С 10 до 20, ежедневно
-        </p>
-        <h3>
-          8 812 450 25 25
-        </h3>
+        <div class="work-hours">
+          <p>
+            С 10 до 20, ежедневно
+          </p>
+          <h3>
+            8 812 450 25 25
+          </h3>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <div class="slider">
           <div class="slide">
-            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <h1>Крем-брюле и пломбир с малиновым джемом</h1>
             <a class="page-scroll active"></a>
             <a class="page-scroll"></a>
             <a class="page-scroll"></a>
             <a class="button">Давайте оба!</a>
           </div>
         </div>
-        <div class="gifts">
+        <div class="gifts clearfix">
           <article class="for-free">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ
@@ -52,35 +53,35 @@
             <a class="button">Хочу варенье!</a>
           </article>
         </div>
-        <div class="icecream-wrapper">
+        <div class="icecream-wrapper clearfix">
           <article class="ice-cream">
             <div class="flag flag-hit">Хит</div>
-            <img src="http://placehold.it/150x100">
+            <img src="img/1.jpg">
             <div class="price">310р/кг</div>
             <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </article>
           <article class="ice-cream">
             <div class="flag flag-hit">Хит</div>
-            <img src="http://placehold.it/150x100">
+            <img src="img/2.jpg">
             <div class="price">380р/кг</div>
             <a>Сливочно-кофейное с кусочками шоколада</a>
           </article>
           <article class="ice-cream">
             <div class="flag flag-hit">Хит</div>
-            <img src="http://placehold.it/150x100">
+            <img src="img/3.jpg">
             <div class="price">355р/кг</div>
             <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
           </article>
           <article class="ice-cream">
             <div class="flag flag-hit">Хит</div>
-            <img src="http://placehold.it/150x100">
+            <img src="img/4.jpg">
             <div class="price">415р/кг</div>
             <a>Сливочное крем-брюле с карамельной подливкой</a>
           </article>
         </div>
-        <section class="about-us">
-          <h2>Магазин глейси - это онлайн и офлайн магазин по продаже мороженного
-            собственного производства на развес</h2>
+        <section class="about-us clearfix">
+          <p class="about-header">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного
+            собственного производства на развес</p>
           <div class="column">
             <p>Все наше мороженное изготавливается на собственном производстве,
               с использованием современного оборудования и проверенных временем
@@ -98,64 +99,72 @@
               и позволяет ему сохранить свой превосходный вкус.</p>
           </div>
         </section>
-        <section class="blog-new">
-          <div class="blog-one">
-            <p>Новое в нашем блоге</p>
-          </div>
-          <div class="blog-two">
-            <a>10 способов сервировки фруктовых щербетов к столу</a>
-          </div>
-        </section>
-        <section class="distribution">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-            всякой ненужной ерунды. Честно =)</p>
-          <form name="email">
-            <input type="text" placeholder="Электронная почта">
-            <input type="submit" value="Отправить">
-          </form>
-        </section>
+        <div class="blog-wrapper clearfix">
+          <section class="column">
+            <div class="blog-one">
+              <p>Новое в нашем блоге</p>
+            </div>
+            <div class="blog-two">
+              <a>10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
+          </section>
+          <section class="column">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+              всякой ненужной ерунды. Честно =)</p>
+            <form name="email">
+              <input type="text" placeholder="Электронная почта">
+              <input type="submit" value="Отправить">
+            </form>
+          </section>
+        </div>
         <section class="map">
-          <div class="adress">
-            <p>
-              Адрес главного офиса и оффлайн магазина:
-              <br>
-              <span class="bold">
-                ул. Большая Конюшенная 19/8, Санкт-Петербург
-              </span>
-              <br>
-              Для заказов по телефону:
-              <span class="bold">
-                8 812 450-25-25
-              </span>
-              <br>
-              (с 10 до 20 ежедневно)
-            </p>
-            <a class="button" href="#">
-              Форма обратной связи
-            </a>
+          <div class="adress clearfix">
+            <div class="adress-text">
+              <p>
+                Адрес главного офиса и оффлайн магазина:
+                <br>
+                <span class="bold">
+                  ул. Большая Конюшенная 19/8, Санкт-Петербург
+                </span>
+                <br>
+                Для заказов по телефону:
+                <span class="bold">
+                  8 812 450-25-25
+                </span>
+                <br>
+                (с 10 до 20 ежедневно)
+              </p>
+              <a class="button" href="#">
+                Форма обратной связи
+              </a>
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="social-links">
+      <div class="container clearfix">
+        <div class="social-links clearfix">
           <a class="social tw" href="#"></a>
           <a class="social inst" href="#"></a>
           <a class="social fb" href="#"></a>
           <a class="social vk" href="#"></a>
         </div>
-        <div class="footer-links">
-          <a>для поставщиков</a>
-          <a>О производстве</a>
-          <a>Наши документы</a>
-          <a>Экологические стандарты</a>
+        <div class="footer-links clearfix">
+          <div class="footer-column">
+            <p><a href="#">для поставщиков</a></p>
+            <p><a href="#">О производстве</a></p>
+          </div>
+          <div class="footer-column">
+            <p><a href="#">Наши документы</a></p>
+            <p><a href="#">Экологические стандарты</a></p>
+          </div>
         </div>
-        <div class="made-by">
-          <img src="http://placehold.it/150x100">
+        <div class="made-by ">
+          <a href="#"><img src="img/Лого.svg"></a>
           <p>
-            Сделано в <a>HTML Academy</a>&#169; 2016
+            Сделано в <a href="#">HTML Academy</a>&#169; 2016
           </p>
         </div>
       </div>

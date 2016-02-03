@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <a class="active" href="#">Каталог</a>
           <a href="#">Доставка и оплата</a>
@@ -17,18 +18,18 @@
           <a class="enter" href="#">Вход</a>
           <a class="cart" href="#">Пусто</a>
         </div>
-      </div>
-      <div class="work-hours">
-        <p>
-          С 10 до 20, ежедневно
-        </p>
-        <h3>
-          8 812 450 25 25
-        </h3>
+        <div class="work-hours">
+          <p>
+            С 10 до 20, ежедневно
+          </p>
+          <h3>
+            8 812 450 25 25
+          </h3>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <nav class="breadcrumps">
           <ul>
             <li>
@@ -42,134 +43,142 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <h1>Сливочное мороженное</h1>
-      <form name="options-form">
-        <div class="options-container">
-          <p>Сортировка:</p>
-          <select>
-            <option>По популярности</option>
-            <option>Метод левой пятки</option>
-          </select>
-        </div>
-        <div class="options-container">
-          <p>Цена: 100-500 руб</p>
-          <div class="range-controls">
-            <div class="scale">
+        <h1>Сливочное мороженное</h1>
+        <div class="form-wrapper clearfix">
+          <form name="options-form">
+            <div class="options-container">
+              <p>Сортировка:</p>
+              <select>
+                <option>По популярности</option>
+                <option>Метод левой пятки</option>
+              </select>
             </div>
-            <div class="toggle min-toggle">
+            <div class="options-container">
+              <p>Цена: 100-500 руб</p>
+              <div class="range-controls">
+                <div class="scale">
+                </div>
+                <div class="toggle min-toggle">
+                </div>
+                <div class="toggle max-toggle">
+                </div>
+              </div>
             </div>
-            <div class="toggle max-toggle">
+            <div class="options-container">
+              <p>Жирность:</p>
+                <label><input type="radio" name="fatness-radio" value="0%">0%</label>
+                <label><input type="radio" name="fatness-radio" value="10%" checked>до 10%</label>
+                <label><input type="radio" name="fatness-radio" value="30%">до 30%</label>
+                <label><input type="radio" name="fatness-radio" value="30% +">выше 30%</label>
             </div>
-          </div>
+            <div class="options-container">
+              <p>Наполнители:</p>
+                <label><input type="checkbox" checked>шоколадные</label>
+                <label><input type="checkbox" checked>сахарные присыпки</label>
+                <label><input type="checkbox">фрукты</label>
+                <label><input type="checkbox">сиропы</label>
+                <label><input type="checkbox">джемы</label>
+            </div>
+            <div class="options-container">
+              <input type="submit" value="Отправить">
+            </div>
+          </form>
         </div>
-        <div class="options-container">
-          <p>Жирность:</p>
-            <label><input type="radio" name="fatness-radio" value="0%">0%</label>
-            <label><input type="radio" name="fatness-radio" value="10%" checked>до 10%</label>
-            <label><input type="radio" name="fatness-radio" value="30%">до 30%</label>
-            <label><input type="radio" name="fatness-radio" value="30% +">выше 30%</label>
+        <div class="icecream-wrapper clearfix">
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/1.jpg"></a>
+              <div class="price">310 р/кг</div>
+              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/2.jpg"></a>
+              <div class="price">380 р/кг</div>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/3.jpg"></a>
+              <div class="price">355 р/кг</div>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/4.jpg"></a>
+              <div class="price">415 р/кг</div>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/5.jpg"></a>
+              <div class="price">325 р/кг</div>
+              <a href="#">Сливочное с брусничным джемом</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/6.jpg"></a>
+              <div class="price">410 р/кг</div>
+              <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/7.jpg"></a>
+              <div class="price">375 р/кг</div>
+              <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/8.jpg"></a>
+              <div class="price">320 р/кг</div>
+              <a href="#">Сливочное с шоколадной стружкой</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/9.jpg"></a>
+              <div class="price">440 р/кг</div>
+              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/10.jpg"></a>
+              <div class="price">435 р/кг</div>
+              <a href="#">Сливочное с ментоловым сиропом</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/11.jpg"></a>
+              <div class="price">355 р/кг</div>
+              <a href="#">Сливочное с кусочками черного шоколада</a>
+          </article>
+          <article class="ice-cream">
+              <a class="image-link"><img src="img/12.jpg"></a>
+              <div class="price">420 р/кг</div>
+              <a href="#">Сливочное с мятным сиропом</a>
+          </article>
         </div>
-        <div class="options-container">
-          <p>Наполнители:</p>
-            <label><input type="checkbox" checked>шоколадные</label>
-            <label><input type="checkbox" checked>сахарные присыпки</label>
-            <label><input type="checkbox">фрукты</label>
-            <label><input type="checkbox">сиропы</label>
-            <label><input type="checkbox">джемы</label>
+        <div class="paginator">
+          <a class="prev" href="#"></a>
+          <span>1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a class="next" href="#"></a>
         </div>
-        <input type="submit" value="Отправить">
-      </form>
-      <div class="icecream-wrapper">
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">310 р/кг</div>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">380 р/кг</div>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">355 р/кг</div>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">415 р/кг</div>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">325 р/кг</div>
-            <a href="#">Сливочное с брусничным джемом</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">410 р/кг</div>
-            <a href="#">Сливочно-черничное с цельными ягодами черники</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">375 р/кг</div>
-            <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">320 р/кг</div>
-            <a href="#">Сливочное с шоколадной стружкой</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">440 р/кг</div>
-            <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">435 р/кг</div>
-            <a href="#">Сливочное с ментоловым сиропом</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">355 р/кг</div>
-            <a href="#">Сливочное с кусочками черного шоколада</a>
-        </article>
-        <article class="icecream">
-            <a class="image-link"><img src="http://placehold.it/150x100"></a>
-            <div class="price">420 р/кг</div>
-            <a href="#">Сливочное с мятным сиропом</a>
-        </article>
-      </div>
-      <div class="paginator">
-        <a class="prev" href="#"></a>
-        <span>1</span>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a class="next" href="#"></a>
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="social-links">
+      <div class="container clearfix">
+        <div class="social-links clearfix">
           <a class="social tw" href="#"></a>
           <a class="social inst" href="#"></a>
           <a class="social fb" href="#"></a>
           <a class="social vk" href="#"></a>
         </div>
-        <div class="footer-links">
-          <a>для поставщиков</a>
-          <a>О производстве</a>
-          <a>Наши документы</a>
-          <a>Экологические стандарты</a>
+        <div class="footer-links clearfix">
+          <div class="footer-column">
+            <p><a href="#">для поставщиков</a></p>
+            <p><a href="#">О производстве</a></p>
+          </div>
+          <div class="footer-column">
+            <p><a href="#">Наши документы</a></p>
+            <p><a href="#">Экологические стандарты</a></p>
+          </div>
         </div>
-        <div class="made-by">
-          <img src="http://placehold.it/150x100">
+        <div class="made-by ">
+          <a href="#"><img src="img/Лого.svg"></a>
           <p>
-            Сделано в <a>HTML Academy</a>&#169; 2016
+            Сделано в <a href="#">HTML Academy</a>&#169; 2016
           </p>
         </div>
       </div>
