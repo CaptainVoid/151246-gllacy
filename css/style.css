@@ -69,8 +69,9 @@ img{
 .slide {
   float: left;
   width: 1200px;
+	
 }
-input .slider-input{
+.slider__input{
 	display: none;
 }
 .slider-controls label {
