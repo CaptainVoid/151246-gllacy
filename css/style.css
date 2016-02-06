@@ -63,16 +63,32 @@ img{
   position: absolute;
   top: 570px;
   left: 27px;
+<<<<<<< HEAD
 	z-index: 2;
+=======
+  z-index: 1000;
+>>>>>>> refs/remotes/htmlacademy-htmlcss/CaptainVoid-master
 }
 .slider-wrapper {
-  width: 300%;
+  /*width: 300%;*/
 }
 .slide {
-  float: left;
+  /*float: left;*/
   width: 1200px;
+<<<<<<< HEAD
 	/*z-index: -1;*/
+=======
+  position: absolute;
+  display: none;
+}
+>>>>>>> refs/remotes/htmlacademy-htmlcss/CaptainVoid-master
 
+.slide img {
+  position: absolute;
+  top: -183px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .slide-text{
 	position:absolute;
@@ -101,14 +117,17 @@ img{
 #btn-3:checked ~ .bg-wrapper .slider-controls label[for="btn-3"] {
   background-color: #fff;
 }
-#btn-1:checked ~ .bg-wrapper .slider .slider-wrapper .slide {
-	transform:translate(0);
+#btn-1:checked ~ .bg-wrapper .slider .slider-wrapper .slide:first-child {
+	/*transform:translate(0);*/
+  display: block;
 }
-#btn-2:checked ~ .bg-wrapper .slider .slider-wrapper .slide {
-	transform:translate(-1200px);
+#btn-2:checked ~ .bg-wrapper .slider .slider-wrapper .slide:nth-child(2) {
+	/*transform:translate(-1200px);*/
+  display: block;
 }
-#btn-3:checked ~ .bg-wrapper .slider .slider-wrapper .slide {
-	transform:translate(-2400px);
+#btn-3:checked ~ .bg-wrapper .slider .slider-wrapper .slide:nth-child(3) {
+	/*transform:translate(-2400px);*/
+  display: block;
 }
 
 #btn-1:checked ~ .bg-wrapper {
@@ -147,7 +166,9 @@ h2 {
   padding:0 10px;
 }
 .main-header{
-	margin-bottom:35px;
+	/*margin-bottom:35px;*/
+  position: relative;
+  z-index: 10;
 }
 .main-navigation{
 	float:left;
