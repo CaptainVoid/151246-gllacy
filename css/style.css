@@ -39,6 +39,7 @@
 	font-style: italic;
 	font-size: 18px;
 }
+
 img{
   vertical-align: middle;
   max-width:100%;
@@ -53,7 +54,7 @@ img{
   position: relative;
 }
 .slider {
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-align: center;
   width: 1200px;
   margin: 0 auto;
@@ -62,6 +63,7 @@ img{
   position: absolute;
   top: 570px;
   left: 27px;
+	z-index: 2;
 }
 .slider-wrapper {
   width: 300%;
@@ -69,7 +71,17 @@ img{
 .slide {
   float: left;
   width: 1200px;
+	/*z-index: -1;*/
 
+}
+.slide-text{
+	position:absolute;
+	top:20px;
+}
+.slide-text h1{
+	font-family: "Roboto Black";
+	font-size:60px;
+	line-height: 60px;
 }
 .slider__input{
 	display: none;
@@ -110,21 +122,14 @@ img{
 #btn-3:checked ~ .bg-wrapper {
   background-color: #9d8b84;
 }
-.slide-text{
-	position:relative;
-	top:-450px;
-}
-.slide-text h1{
-	font-family: "Roboto Black";
-	font-size:60px;
-	line-height: 60px;
-}
+
 body {
 	font-family: "Roboto medium";
 	font-size:16px;
 	line-height:22px;
 	margin:0;
 	padding:0;
+	color:white
 
 }
 h1 {
@@ -290,4 +295,124 @@ h2 {
 .paginator{
 	width:267px;
 	float:right;
+}
+/*ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ НАЧИНАЮТСЯ ЗДЕСЬ.
+КТО НАЧИНАЕТ БЛУЖДАТЬ В СОБСТВЕННОМ КОДЕ ТОТ Я */
+.sprite {
+    background-image: url("../img/sprite/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-about-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -10px;
+}
+
+.sprite-about-icecream {
+    width: 49px;
+    height: 49px;
+    background-position: -78px -10px;
+}
+
+.sprite-about-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -79px;
+}
+
+.sprite-about-termo {
+    width: 48px;
+    height: 49px;
+    background-position: -79px -79px;
+}
+
+.sprite-chosen-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -147px -10px;
+}
+
+.sprite-header-cart {
+    width: 21px;
+    height: 20px;
+    background-position: -147px -43px;
+}
+
+.sprite-header-cart-full {
+    width: 16px;
+    height: 11px;
+    background-position: -147px -83px;
+}
+
+.sprite-header-enter {
+    width: 21px;
+    height: 19px;
+    background-position: -147px -114px;
+}
+
+.sprite-header-enter-active {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -153px;
+}
+
+.sprite-header-loup {
+    width: 17px;
+    height: 17px;
+    background-position: -51px -153px;
+}
+
+.sprite-header-loup-active {
+    width: 17px;
+    height: 17px;
+    background-position: -88px -153px;
+}
+
+.sprite-social-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -125px -153px;
+}
+
+.sprite-social-insta {
+    width: 32px;
+    height: 32px;
+    background-position: -188px -10px;
+}
+
+.sprite-social-twitter {
+    width: 33px;
+    height: 32px;
+    background-position: -188px -62px;
+}
+
+.sprite-social-vk {
+    width: 32px;
+    height: 32px;
+    background-position: -188px -114px;
+}
+.main-header a{
+	text-decoration: underline;
+	color:white;
+}
+.main-header a:hover{
+	text-decoration: none;
+	color:black;
+	border:4px solid white;
+	padding:0 3px;
+	background-color:white;
+	border-radius:20px;
+
+}
+.main-header a:active{
+	/*ДОДЕЛАТЬ*/
+	text-decoration: none;
+	color:black;
+	border:4px solid white;
+	padding:0 3px;
+	background-color:white;
+	border-radius:20px;
+	box-shadow:0 -2px 8px -4px black;
 }
