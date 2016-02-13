@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -30,10 +31,75 @@
               </li>
             </ul>
           </nav>
+          <div class="catalog-popup">
+            <ul>
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+          </div>
           <div class="user-block">
-                <a class="search" href="#"></a>
-                <a class="enter" href="#">Вход</a>
-                <a class="cart" href="#">Пусто</a>
+            <a class="search" href="#"></a>
+            <div class="search-popup">
+              <form name="search-form">
+                <input type="text" placeholder="Что ищем?">
+              </form>
+            </div>
+            <a class="enter" href="#">Вход</a>
+            <div class="enter-popup">
+              <form name="enter-form">
+                <input type="text" placeholder="Электронная почта">
+                <br>
+                <input type="password" placeholder="Пароль">
+                <br>
+                <input type="submit" value="Войти">
+              </form>
+                <a class="popup-link" href="#">Забыли пароль?</a>
+                <a class="popup-link" href="#">Новая регистрация</a>
+            </div>
+            <a class="cart" href="#">Пусто</a>
+            <div class="cart-popup">
+              <table class="cart-table">
+                <tr>
+                  <td>
+                    <img src="img/cross.png">
+                  </td>
+                  <td>
+                    <img src="img/mini-icecream-1.png">
+                  </td>
+                  <td>
+                    <p>Пломбир с апельсиновым джемом</p>
+                  </td>
+                  <td>
+                    <p>1,5кг х <span>200 руб</span></p>
+                  </td>
+                  <td>
+                    <p>300 руб.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/cross.png">
+                  </td>
+                  <td>
+                    <img src="img/mini-icecream-2.png">
+                  </td>
+                  <td width="232px">
+                    <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                  </td>
+                  <td>
+                    <p>1,5кг х <span>300 руб</span></p>
+                  </td>
+                  <td>
+                    <p>450 руб.</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="bill">Итого: 750 руб.</p>
+              <a class="button" href="#">Оформить заказ</a>
+            </div>
           </div>
           <div class="work-hours">
             <p>
@@ -102,54 +168,62 @@
                   <img src="img/sprite/Hit.png">
                 </div>
                 <img src="img/ice-1-apelsin.png">
-                <div class="price">310р/кг</div>
+                <div class="price">310 <i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
+                <div class="ice-cream-transparent">
+                </div>
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
                   <img src="img/sprite/Hit.png">
                 </div>
                 <img src="img/ice-2-coffee.png">
-                <div class="price">380р/кг</div>
+                <div class="price">380 <i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
+                <div class="ice-cream-transparent">
+                </div>
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
                   <img src="img/sprite/Hit.png">
                 </div>
                 <img src="img/ice-3-strawberry.png">
-                <div class="price">355р/кг</div>
+                <div class="price">355 <i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
+                <div class="ice-cream-transparent">
+                </div>
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
                   <img src="img/sprite/Hit.png">
                 </div>
                 <img src="img/ice-4-caramel.png">
-                <div class="price">415р/кг</div>
+                <div class="price">415 <i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
+                <div class="ice-cream-transparent">
+                </div>
               </article>
             </div>
             <section class="about-us clearfix">
               <p class="about-header">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного
                 собственного производства на развес</p>
               <div class="column about-one">
-                <p>Все наше мороженное изготавливается на собственном производстве,
+                <p class="ice-column">Все наше мороженное изготавливается на собственном производстве,
                   с использованием современного оборудования и проверенных временем
                   технологий.</p>
-                <p>Для приготовления мороженного используются настоящие сливки и молоко
+                <p class="leaf-column">Для приготовления мороженного используются настоящие сливки и молоко
                   высочайшего качества. Все дополнительные ингридиенты и добавки
                   произведены из натурального, экологически чистого сырья.</p>
               </div>
               <div class="column about-two">
-                <p>Закупка ингридентов производится только у проверенных фермерских
+                <p class="cow-column">Закупка ингридентов производится только у проверенных фермерских
                   хозяйстви компаний, с которыми нас связывает долговременное
                   сотрудничество.</p>
-                <p>Доставка нашего мороженного до заказчиков осуществляется в
+                <p class="termo-column">Доставка нашего мороженного до заказчиков осуществляется в
                   специальном термопаке, который не дает мороженному растаять в пути
                   и позволяет ему сохранить свой превосходный вкус.</p>
               </div>
@@ -197,6 +271,14 @@
                     Форма обратной связи
                   </a>
                 </div>
+                <div class="feedback-popup">
+                  <p>Мы обязательно вам ответим!</p>
+                  <form name="feedback-popup-form">
+                    <input type="text" class="feedback-input-first" placeholder="Как вас зовут?">
+                    <input type="text" class="feedback-input-first" placeholder="Ваша почта для ответа?">
+                    <input type="text" class="feedback-input-second" placeholder="Напишите что-нибудь"> <!--Сделать textarea -->
+                    <input type="submit" value="Отправить">
+                  </form>
               </div>
             </section>
           </div>

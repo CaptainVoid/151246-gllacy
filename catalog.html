@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,7 +17,7 @@
               <a href="#"><img src="img//sprite/main-logo.png"></a>
             </li>
             <li>
-              <a href="#" class="header-link">Каталог</a>
+              <span class="current">Каталог</span>
             </li>
             <li>
               <a href="#" class="header-link">Доставка и оплата</a>
@@ -28,6 +29,11 @@
         </nav>
         <div class="user-block">
               <a class="search" href="#"></a>
+              <div class="search-popup">
+                <form name="search-form">
+                  <input type="text" placeholder="Что ищем?">
+                </form>
+              </div>
               <a class="enter" href="#">Вход</a>
               <a class="cart" href="#">Пусто</a>
         </div>
@@ -61,112 +67,156 @@
           <form name="options-form">
             <div class="options-container">
               <p>Сортировка:</p>
-              <select>
-                <option>По популярности</option>
-                <option>Метод левой пятки</option>
-              </select>
+              <label class="select-style">
+                <select>
+                  <option>По популярности</option>
+                  <option>Метод левой пятки</option>
+                </select>
+              </label>
             </div>
             <div class="options-container">
               <p>Цена: 100-500 руб</p>
-              <div class="range-controls">
-                <div class="scale">
-                </div>
-                <div class="toggle min-toggle">
-                </div>
-                <div class="toggle max-toggle">
+              <div class="options-background">
+                <div class="range-controls">
+                  <div class="scale">
+                  </div>
+                  <div class="toggle min-toggle">
+                  </div>
+                  <div class="toggle max-toggle">
+                  </div>
                 </div>
               </div>
             </div>
             <div class="options-container">
               <p>Жирность:</p>
-                <label><input type="radio" name="fatness-radio" value="0%">0%</label>
-                <label><input type="radio" name="fatness-radio" value="10%" checked>до 10%</label>
-                <label><input type="radio" name="fatness-radio" value="30%">до 30%</label>
-                <label><input type="radio" name="fatness-radio" value="30% +">выше 30%</label>
+              <div class="options-background">
+                <label class="radio-style"><input type="radio" name="fatness-radio" value="0%"><span></span>0%</label>
+                <label class="radio-style"><input type="radio" name="fatness-radio" value="10%" checked><span></span>до 10%</label>
+                <label class="radio-style"><input type="radio" name="fatness-radio" value="30%"><span></span>до 30%</label>
+                <label class="radio-style"><input type="radio" name="fatness-radio" value="30% +"><span></span>выше 30%</label>
+              </div>
             </div>
             <div class="options-container">
               <p>Наполнители:</p>
-                <label><input type="checkbox" checked>шоколадные</label>
-                <label><input type="checkbox" checked>сахарные присыпки</label>
-                <label><input type="checkbox">фрукты</label>
-                <label><input type="checkbox">сиропы</label>
-                <label><input type="checkbox">джемы</label>
+              <div class="options-background">
+                <label class="checkbox-style"><input type="checkbox" checked><span></span>шоколадные</label>
+                <label class="checkbox-style"><input type="checkbox" checked><span></span>сахарные присыпки</label>
+                <label class="checkbox-style"><input type="checkbox"><span></span>фрукты</label>
+                <label class="checkbox-style"><input type="checkbox"><span></span>сиропы</label>
+                <label class="checkbox-style"><input type="checkbox"><span></span>джемы</label>
+              </div>
             </div>
             <div class="options-container">
-              <input type="submit" value="Отправить">
+              <input type="submit" value="Применить">
             </div>
           </form>
         </div>
-        <div class="icecream-wrapper clearfix">
+        <div class="ice-cream-wrapper  clearfix">
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-1-apelsin.png"></a>
-              <div class="price">310 р/кг</div>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <div class="price">310 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-2-coffee.png"></a>
-              <div class="price">380 р/кг</div>
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <div class="price">380 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-3-strawberry.png"></a>
-              <div class="price">355 р/кг</div>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <div class="price">355 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-4-caramel.png"></a>
-              <div class="price">415 р/кг</div>
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <div class="price">415 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-5-cowberry.png"></a>
-              <div class="price">325 р/кг</div>
-              <a href="#">Сливочное с брусничным джемом</a>
+              <div class="price">325 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное с брусничным джемом</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-6-blueberry.png"></a>
-              <div class="price">410 р/кг</div>
-              <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+              <div class="price">410 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-7-lemon.png"></a>
-              <div class="price">375 р/кг</div>
-              <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+              <div class="price">375 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-8-chocolate.png"></a>
-              <div class="price">320 р/кг</div>
-              <a href="#">Сливочное с шоколадной стружкой</a>
+              <div class="price">320 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное с шоколадной стружкой</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-9-vanilla.png"></a>
-              <div class="price">440 р/кг</div>
-              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+              <div class="price">440 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочно-ванильное с кусочками шоколада</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-10-mentol.png"></a>
-              <div class="price">435 р/кг</div>
-              <a href="#">Сливочное с ментоловым сиропом</a>
+              <div class="price">435 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное с ментоловым сиропом</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-11-blackchoco.png"></a>
-              <div class="price">355 р/кг</div>
-              <a href="#">Сливочное с кусочками черного шоколада</a>
+              <div class="price">355 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное с кусочками черного шоколада</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
           <article class="ice-cream">
               <a class="image-link"><img src="img/ice-12-mint.png"></a>
-              <div class="price">420 р/кг</div>
-              <a href="#">Сливочное с мятным сиропом</a>
+              <div class="price">420 <i class="fa fa-rub"></i>/кг</div>
+              <a class="ice-link"  href="#">Сливочное с мятным сиропом</a>
+              <a class="button hidden-view" href="#">Быстрый просмотр</a>
+              <div class="ice-cream-transparent">
+              </div>
           </article>
         </div>
         <div class="paginator">
-          <a class="prev" href="#"></a>
-          <span>1</span>
+          <span class="prev disabled"><</span>
+          <span class="current">1</span>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">4</a>
           <a href="#">5</a>
-          <a class="next" href="#"></a>
+          <a class="next" href="#">></a>
         </div>
       </div>
     </main>
@@ -180,7 +230,7 @@
         </div>
         <div class="footer-links clearfix">
           <div class="footer-column">
-            <p><a href="#">Для поставщиков</a></p>
+            <p><a class="heart" href="#">Для поставщиков</a></p>
             <p><a href="#">О производстве</a></p>
           </div>
           <div class="footer-column">
