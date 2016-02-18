@@ -12,16 +12,17 @@
     <input class="slider__input" type="radio" name="slider" id="btn-2" />
     <input class="slider__input" type="radio" name="slider" id="btn-3" />
     <div class="bg-wrapper">
+      <div class="flow-trans"></div>
       <header class="main-header">
         <div class="container clearfix">
           <!--Только заметил - там же перед всеми ссылками еще есть логотип магазина. Как его сюда поставить правильней? -->
           <nav class="main-navigation">
-            <ul>
-              <li>
+            <ul class="main-list-ul">
+              <li class="logo-li">
                 <a href="#" class="logo-link"><img src="img//sprite/main-logo.png" alt="Глейси"></a>
               </li>
-              <li>
-                <a href="catalog.html" class="header-link catalog">Каталог</a>
+              <li class="header-li  catalog">
+                <a href="catalog.html" class="header-link">Каталог</a>
                 <div class="catalog-popup">
                   <ul>
                     <li><p class="catalog-popup-underline">Новинки</p></li>
@@ -32,10 +33,10 @@
                   </ul>
                 </div>
               </li>
-              <li>
+              <li class="header-li">
                 <a href="#" class="header-link">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="header-li">
                 <a href="#" class="header-link">О Компании</a>
               </li>
             </ul>
@@ -241,73 +242,54 @@
                 <!-- </div> -->
               </section>
             </div>
-            <section class="map clearfix">
-              <div class="pin">
-                <img src="img/sprite/map-pin.png" alt="Вот сюда">
-              </div>
-              <div class="adress">
-                <div class="adress-text">
-                  <p>
-                    Адрес главного офиса и
-                    <br>
-                    оффлайн магазина:
-                    <br>
-                    <span class="bold">
-                      ул. Большая Конюшенная 19/8, Санкт-Петербург
-                    </span>
-                    <br>
-                    <br>
-                    Для заказов по телефону:
-                    <br>
-                    <span class="bold">
-                      8 812 450-25-25
-                    </span>
-                    <br>
-                    (с 10 до 20 ежедневно)
-                  </p>
-                  <a class="button feedback-button" href="#">
-                    Форма обратной связи
-                  </a>
-                </div>
-                <div class="feedback-popup">
-                  <p>Мы обязательно вам ответим!</p>
-                  <div class="feedback-cross"></div>
-                  <form name="feedback-popup-form">
-                    <label><input type="text" class="feedback-input-first" name="first-name" placeholder="Как вас зовут?" required></label>
-                    <input type="text" class="feedback-input-first" name="second-name" placeholder="Ваша почта для ответа?" required>
-                    <input type="text" class="feedback-input-second" name="information" placeholder="Напишите что-нибудь" required> <!--Сделать textarea -->
-                    <input type="submit" value="Отправить">
-                  </form>
-                </div>
-              </div>
-            </section>
           </div>
+          <div class="adress">
+            <div class="adress-text">
+              <p>
+                Адрес главного офиса и
+                <br>
+                оффлайн магазина:
+                <br>
+                <span class="bold">
+                  ул. Большая Конюшенная 19/8, Санкт-Петербург
+                </span>
+                <br>
+                <br>
+                Для заказов по телефону:
+                <br>
+                <span class="bold">
+                  8 812 450-25-25
+                </span>
+                <br>
+                (с 10 до 20 ежедневно)
+              </p>
+              <a class="button feedback-button" href="#">
+                Форма обратной связи
+              </a>
+            </div>
+          </div>
+          <div class="feedback-popup">
+            <p>Мы обязательно вам ответим!</p>
+            <div class="feedback-cross"></div>
+              <form class="feedback-popup-form">
+                <div class="label-wrapper">
+                  <input type="text" class="feedback-input-first" name="first-name" placeholder="Как вас зовут?" required><label for="first-name">Как вас зовут?</label>
+                </div>
+                <div class="label-wrapper">
+                  <input type="text" class="feedback-input-first" name="second-name" placeholder="Ваша почта для ответа?" required><label for="second-name">Ваша почта для ответа?</label>
+                </div>
+                <div class="label-wrapper">
+                  <textarea class="feedback-input-second" name="information" placeholder="Напишите что-нибудь" required></textarea><label for="information">Напишите что-нибудь</label>
+                </div>
+                <input type="submit" value="Отправить">
+              </form>
+            </div>
         </div>
-        <!-- <section class="map-yandex clearfix">
-          <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X6fMHmXJ1cHkN6WSENokg6-TpGk4-A9b&width=100%&height=430&lang=ru_RU&sourceType=constructor"></script>
-        </section> -->
-        <script src="js/jquery-2.2.0.min.js"></script>
-        <script>
-          var link = document.querySelector(".feedback-button");
-
-          var popup = document.querySelector(".feedback-popup");
-          var close = popup.querySelector(".feedback-cross");
-          var firstname = popup.querySelector("[name=first-name]");
-          var secondname = popup.querySelector("[name=second-name]");
-          var info = popup.querySelector("[name=information]");
-          var form = popup.querySelector("form");
-          var storage = localStorage.getItem("firstname");
-
-          link.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.add("feedback-popup-show");
-          });
-          close.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.remove("feedback-popup-show");
-          });
-
-        </script>
+        <section class="map clearfix">
+          <div class="map-yandex clearfix">
+            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X6fMHmXJ1cHkN6WSENokg6-TpGk4-A9b&width=100%&height=430&lang=ru_RU&sourceType=constructor"></script>
+          </div>
+        </section>
       </main>
       <footer class="main-footer">
         <div class="container clearfix">
@@ -336,6 +318,38 @@
         </div>
       </footer>
     </div> <!--КОНЕЦ СЛАЙДЕРА -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script>
+      var link = document.querySelector(".feedback-button");
+      var flow = document.querySelector(".flow-trans")
 
+      var popup = document.querySelector(".feedback-popup");
+      var close = popup.querySelector(".feedback-cross");
+      var firstname = popup.querySelector("[name=first-name]");
+      var secondname = popup.querySelector("[name=second-name]");
+      var info = popup.querySelector("[name=information]");
+      var form = popup.querySelector("form");
+      var storage = localStorage.getItem("firstname");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("feedback-popup-show");
+        flow.classList.add("feedback-popup-show")
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("feedback-popup-show");
+        flow.classList.remove("feedback-popup-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("feedback-popup-show")) {
+            popup.classList.remove("feedback-popup-show");
+            flow.classList.remove("feedback-popup-show");
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>
