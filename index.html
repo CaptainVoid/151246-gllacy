@@ -26,10 +26,10 @@
                 <div class="catalog-popup">
                   <ul>
                     <li><p class="catalog-popup-underline">Новинки</p></li>
-                    <li>Сливочное</li>
-                    <li>Щербеты</li>
-                    <li>Фруктовый лед</li>
-                    <li>Мелорин</li>
+                    <li><p class="catalog-popup-regular">Сливочное</p></li>
+                    <li><p class="catalog-popup-regular">Щербеты</p></li>
+                    <li><p class="catalog-popup-regular">Фруктовый лед</p></li>
+                    <li><p class="catalog-popup-regular">Мелорин</p></li>
                   </ul>
                 </div>
               </li>
@@ -337,6 +337,11 @@
         flow.classList.add("feedback-popup-show")
       });
       close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("feedback-popup-show");
+        flow.classList.remove("feedback-popup-show");
+      });
+      flow.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("feedback-popup-show");
         flow.classList.remove("feedback-popup-show");
