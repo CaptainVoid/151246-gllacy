@@ -273,13 +273,13 @@
             <div class="feedback-cross"></div>
               <form class="feedback-popup-form">
                 <div class="label-wrapper">
-                  <input type="text" class="feedback-input-first" name="first-name" placeholder="Как вас зовут?" required><label for="first-name">Как вас зовут?</label>
+                  <input type="text" class="feedback-input-first" id="first-name" placeholder="Как вас зовут?" required><label for="first-name">Как вас зовут?</label>
                 </div>
                 <div class="label-wrapper">
-                  <input type="text" class="feedback-input-first" name="second-name" placeholder="Ваша почта для ответа?" required><label for="second-name">Ваша почта для ответа?</label>
+                  <input type="text" class="feedback-input-first" id="second-name" placeholder="Ваша почта для ответа?" required><label for="second-name">Ваша почта для ответа?</label>
                 </div>
                 <div class="label-wrapper">
-                  <textarea class="feedback-input-second" name="information" placeholder="Напишите что-нибудь" required></textarea><label for="information">Напишите что-нибудь</label>
+                  <textarea class="feedback-input-second" id="information" placeholder="Напишите что-нибудь" required></textarea><label for="information">Напишите что-нибудь</label>
                 </div>
                 <input type="submit" value="Отправить">
               </form>
@@ -319,42 +319,6 @@
       </footer>
     </div> <!--КОНЕЦ СЛАЙДЕРА -->
     <script src="js/jquery-2.2.0.min.js"></script>
-    <script>
-      var link = document.querySelector(".feedback-button");
-      var flow = document.querySelector(".flow-trans")
-
-      var popup = document.querySelector(".feedback-popup");
-      var close = popup.querySelector(".feedback-cross");
-      var firstname = popup.querySelector("[name=first-name]");
-      var secondname = popup.querySelector("[name=second-name]");
-      var info = popup.querySelector("[name=information]");
-      var form = popup.querySelector("form");
-      var storage = localStorage.getItem("firstname");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("feedback-popup-show");
-        flow.classList.add("feedback-popup-show")
-      });
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("feedback-popup-show");
-        flow.classList.remove("feedback-popup-show");
-      });
-      flow.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("feedback-popup-show");
-        flow.classList.remove("feedback-popup-show");
-      });
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("feedback-popup-show")) {
-            popup.classList.remove("feedback-popup-show");
-            flow.classList.remove("feedback-popup-show");
-          }
-        }
-      });
-
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
