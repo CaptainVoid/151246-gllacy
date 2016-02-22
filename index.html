@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <input class="slider__input" type="radio" name="slider" id="btn-1" checked/>
@@ -19,7 +19,7 @@
           <nav class="main-navigation">
             <ul class="main-list-ul">
               <li class="logo-li">
-                <a href="#" class="logo-link"><img src="img//sprite/main-logo.png" alt="Глейси"></a>
+                <a href="#" class="logo-link"><img src="img//sprite/main-logo.png" alt="Глейси" width="154px" height="64px"></a>
               </li>
               <li class="header-li  catalog">
                 <a href="catalog.html" class="header-link">Каталог</a>
@@ -65,10 +65,10 @@
               <table class="cart-table" >
                 <tr>
                   <td>
-                    <img src="img/cross.png" alt=".">
+                    <img src="img/cross.png" alt="." width="11px" height="11px">
                   </td>
                   <td>
-                    <img src="img/mini-icecream-1.png" alt="Мороженное">
+                    <img src="img/mini-icecream-1.png" alt="Мороженное" width="33px" height="33px">
                   </td>
                   <td>
                     <p>Пломбир с апельсиновым джемом</p>
@@ -82,10 +82,10 @@
                 </tr>
                 <tr>
                   <td>
-                    <img src="img/cross.png" alt=".">
+                    <img src="img/cross.png" alt="." width="11px" height="11px">
                   </td>
                   <td>
-                    <img src="img/mini-icecream-2.png" alt="Мороженное">
+                    <img src="img/mini-icecream-2.png" alt="Мороженное" width="33px" height="33px">
                   </td>
                   <td class="table-wide">
                     <p>Клубничный пломбир с присыпкой из белого шоколада</p>
@@ -162,9 +162,9 @@
             <div class="ice-cream-wrapper clearfix">
               <article class="ice-cream">
                 <div class="flag flag-hit">
-                  <img src="img/sprite/Hit.png" alt="Хит!">
+                  <img src="img/sprite/Hit.png" alt="Хит!" width="67px" height="67px">
                 </div>
-                <img src="img/ice-1-apelsin.png" alt="Мороженное">
+                <img src="img/ice-1-apelsin.png" alt="Мороженное" width="267px" height="267px">
                 <div class="price">310<i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
@@ -173,9 +173,9 @@
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
-                  <img src="img/sprite/Hit.png" alt="Хит!">
+                  <img src="img/sprite/Hit.png" alt="Хит!" width="67px" height="67px">
                 </div>
-                <img src="img/ice-2-coffee.png" alt="Мороженное">
+                <img src="img/ice-2-coffee.png" alt="Мороженное" width="267px" height="267px">
                 <div class="price">380<i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
@@ -184,9 +184,9 @@
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
-                  <img src="img/sprite/Hit.png" alt="Хит!">
+                  <img src="img/sprite/Hit.png" alt="Хит!" width="67px" height="67px">
                 </div>
-                <img src="img/ice-3-strawberry.png" alt="Мороженное">
+                <img src="img/ice-3-strawberry.png" alt="Мороженное" width="267px" height="267px">
                 <div class="price">355<i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
@@ -195,9 +195,9 @@
               </article>
               <article class="ice-cream">
                 <div class="flag flag-hit">
-                  <img src="img/sprite/Hit.png" alt="Хит!">
+                  <img src="img/sprite/Hit.png" alt="Хит!" width="67px" height="67px">
                 </div>
-                <img src="img/ice-4-caramel.png" alt="Мороженное">
+                <img src="img/ice-4-caramel.png" alt="Мороженное" width="267px" height="267px">
                 <div class="price">415<i class="fa fa-rub"></i>/кг</div>
                 <a class="ice-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <a class="button hidden-view" href="#">Быстрый просмотр</a>
@@ -235,8 +235,8 @@
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
                     самого вкусного, что у нас происходит. Обещаем не спамить и не слать
                     всякой ненужной ерунды. Честно =)</p>
-                  <form name="email">
-                    <input type="text" placeholder="Электронная почта">
+                  <form name="email" class="email-form">
+                      <input type="text" placeholder="Электронная почта" id="email">
                     <input type="submit" value="Отправить">
                   </form>
                 <!-- </div> -->
@@ -263,7 +263,7 @@
                 <br>
                 (с 10 до 20 ежедневно)
               </p>
-              <a class="button feedback-button" href="#">
+              <a class="button feedback-button" href="form.html">
                 Форма обратной связи
               </a>
             </div>
@@ -310,7 +310,7 @@
             </div>
           </div>
           <div class="made-by ">
-            <a href="#"><img src="img/sprite/footer-logo.png" alt="HTML Academy"></a>
+            <a href="#"><img src="img/sprite/footer-logo.png" alt="HTML Academy" width="108px" height="38px"></a>
             <p>
               Сделано в <a href="#">HTML Academy</a>&#169; 2016
             </p>
@@ -319,6 +319,6 @@
       </footer>
     </div> <!--КОНЕЦ СЛАЙДЕРА -->
     <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
