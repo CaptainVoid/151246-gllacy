@@ -76,8 +76,8 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 .catalog-popup:hover{display:block}
 .catalog-popup li{margin:0; padding:7px 12px; position:relative; font-size:14px; font-family:"Roboto regular"}
 
-.catalog-popup a{color:black; padding:0; margin:0; text-decoration:none}
-.catalog-popup-underline{margin:0; padding:0; padding-left:10px;  color:black; font-size:14px; border-bottom:1px solid #d1d0ce; font-family:"Roboto bold"}
+.catalog-popup a{color:black; text-decoration:none}
+.catalog-popup-underline{margin:0; padding:0; padding-left:10px;  padding-right:57px; margin-bottom:3px;  padding-bottom:3px; color:black; font-size:14px; border-bottom:1px solid #d1d0ce; font-family:"Roboto bold"}
 .catalog-popup-regular{margin:0; padding:0; padding-left:10px; color:black}
 .catalog-popup li:hover{background-color:#fbded7}
 .catalog-popup li:active{background-color:#f6b5a5}
@@ -149,7 +149,8 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 .for-free:first-child{margin-right:26px}
 .ice-cream-wrapper{width:1146px}
 .ice-cream{width:267px; float:left; margin-right:26px;  padding-bottom:40px; position:relative; text-align:center; min-height:323px; z-index:10}
-.ice-cream::after{content:""; width:267px; position:absolute; top:-16px; left:-10px; padding:10px;  min-height:383px; background-color:rgba(255,255,255,0.3); z-index:-1; border-radius:5px; display:none}
+
+.ice-cream::after{content:""; position:absolute; top:-6px; left:-6px; right:-5px; bottom:-84px; margin:auto; background:rgba(255,255,255,0.3); border-radius:4px; z-index:-1; display:none}
 
 .ice-link:hover{color:#f7ba9d}
 .ice-link:active{color:#f7ba9d}
@@ -157,16 +158,15 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 
 .ice-cream .button:active{background: -moz-linear-gradient(top,#d84732 0%,#e1613e 100%); background:-webkit-linear-gradient(top,#d84732 0%,#e1613e 100%); background: linear-gradient(to bottom,#d84732 0%,#e1613e 100%); box-shadow:inset 0 2px 2px rgba(172,16,0,1)}
 
-.hidden-view{position:absolute;  padding:7px 23px;  bottom:-3px; left:35px; display:none; z-index:100}
+.hidden-view{position:absolute;  padding:7px 23px;  bottom:-23px; left:40px; display:none; z-index:100}
 .ice-cream:hover .hidden-view{display:block}
 .ice-cream:hover::after{display:block}
 .ice-cream:hover ~ .ice-cream{ z-index:-2}
 .ice-cream:hover >.ice-link{text-decoration:none}
-
 .ice-cream:nth-child(4n){margin-right:0}
 .flag-hit{position:absolute}
-.price{position:absolute;  top:210px; left:0px; font-size:45px}
-.price i{font-size:40px}
+.price{position:absolute;  top:215px; left:5px; font-size:45px; text-shadow:2px 0px 2px rgba(255,255,255,0.5)}
+.price i{font-size:40px; margin-left:5px}
 .ice-cream img{margin-bottom:12px}
 
 .column{float:left; width:560px; margin-right:26px}
@@ -202,7 +202,7 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 .map-yandex{position:absolute;  top:0px; width:100%; min-height:430px; z-index:150}
 .pin{position:absolute;  left:251px;  top:139px}
 .adress{position:absolute; width:251px; margin-top:65px; margin-right:26px; padding:30px 25px; padding-bottom:44px; background-color:white; color:black; border-radius:20px; text-align:left; z-index:400; right:0; bottom:-375px}
-.adress-text p{margin:0; margin-right:26px; margin-bottom:38px; font-family:"Roboto regular"; font-size:14px; line-height:20px}
+.adress-text p{margin:0; margin-right:26px; margin-bottom:34px; font-family:"Roboto regular"; font-size:14px; line-height:20px}
 .adress-text .bold{font-family:"Roboto bold"; font-size:18px; line-height:24px}
 .adress-text .button{font-family:"Roboto bold"; font-size:17px; padding:13px 33px; vertical-align:middle; text-align:center}
 .adress-text .button:hover{background: -moz-linear-gradient(top,#f58669 0%,#ec6f5e 100%); background:-webkit-linear-gradient(top,#f58669 0%,#ec6f5e 100%); background: linear-gradient(to bottom,#f58669 0%,#ec6f5e 100%); box-shadow:0 2px 2px rgba(172,16,0,1)}
@@ -292,12 +292,13 @@ input[type="password"]:focus{border:1px solid #8fbdec; box-shadow:inset 0px 0px 
 .options-container{float:left; margin-right:16px;  margin-bottom:12px}
 .options-container p{padding-left:15px}
 .options-background{padding:6px 9px; background-color:rgba(255,255,255,0.2); border-radius:100px}
-.checkbox-options label{margin-right:5px}
+.checkbox-options label{margin-right:3px}
 .options-container input[type="submit"]{background:rgba(255,255,255,0.2); color:white; border:2px solid white; text-shadow:none; box-shadow:none;   margin-top:22px;   padding:7px 27px}
 .options-container input[type="submit"]:hover{color:black; border:none; background-color:white; border:2px solid transparent}
 .options-container input[type="submit"]:active{background-color:#eaeaea; border:none; box-shadow:inset 0px 2px 2px 1px rgba(0,0,0,0.75)}
 .options-container select{background:rgba(255,255,255,0.2); color:white;   padding:6px 10px;   border-radius:20px; outline:none}
 .options-container select:hover{background:white; color:black;   padding:6px 10px;   border-radius:20px; outline:none}
+.options-container p{font-size:14px}
 .range-controls{position:relative}
 .scale{width:188px; height:4px; background:#d1d9d2}
 .scale .bar{margin-left:25px; width:100px; background:#f8f7f4; height:4px}
@@ -310,6 +311,8 @@ input[type="password"]:focus{border:1px solid #8fbdec; box-shadow:inset 0px 0px 
 .radio-options{padding-left:2px}
 .radio-options label{}
 .checkbox-container{margin-right:15px}
+.flag-hit{width:60px; height:60px}
+.adress-text .exclusive{display:inline-block; padding:2px 0}
 
 .icecream-wrapper{width:1146px; margin-bottom:85px}
 .paginator{width:267px;  float:right;  margin-top:40px;  margin-bottom:38px;  text-align:right}
@@ -326,7 +329,7 @@ input[type="password"]:focus{border:1px solid #8fbdec; box-shadow:inset 0px 0px 
 
 .main-footer{height:70px; position:relative; z-index:10; font-family:"Roboto regular"; padding-top:30px}
 .social-links{width:267px; float:left; margin-right:26px}
-.social{opacity:0.8;  width:32px;  height:32px;  display:inline-block;  vertical-align:bottom;  margin-right:12px;  margin-top:10px;  box-shadow:0px 0px 0px 3px rgba(255,255,255,0.3);    border-radius:20px}
+.social{opacity:0.8;  width:32px;  height:32px;  display:inline-block;  vertical-align:bottom;  margin-right:15px;  margin-top:10px;  box-shadow:0px 0px 0px 3px rgba(255,255,255,0.3);    border-radius:20px}
 .social:hover{opacity:1}
 .social:active{opacity:0.8; box-shadow:inset 0px 1px 1px 1px rgba(0,0,0,0.75),0px 0px 0px 3px rgba(255,255,255,0.3)}
 .fb{background-image:url("../img/facebook.svg"); background-position:center; background-repeat:no-repeat}
@@ -345,7 +348,7 @@ input[type="password"]:focus{border:1px solid #8fbdec; box-shadow:inset 0px 0px 
 .footer-column:first-child{margin-right:30px; padding-left:130px}
 .made-by{width:187px; float:right; margin-top:-10px; font-size:12px; text-align:left}
 
-.made-by p{margin:0; padding:0}
+.made-by p{margin:0; padding:0;  margin-top:3px}
 .made-by a:hover{color:#ec593c; text-decoration:underline}
 .made-by a:active{color:#ec593c; text-decoration:underline}
 .made-by a{text-align:left}
