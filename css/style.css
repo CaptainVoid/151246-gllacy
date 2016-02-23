@@ -866,7 +866,7 @@ box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 	top:-6px;
 	left:-6px;
 	right:-5px;
-	bottom:-84px;
+	bottom:-39px;
 	margin:auto;
 	background: rgba(255,255,255,0.3);
 	border-radius: 4px;
@@ -900,7 +900,7 @@ box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 .hidden-view{
 	position: absolute;
   padding: 7px 23px;
-  bottom: -23px;
+  bottom: -15px;
 	left: 40px;
 	display:none;
 	z-index:100;

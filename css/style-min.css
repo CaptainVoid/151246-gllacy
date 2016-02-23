@@ -150,7 +150,7 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 .ice-cream-wrapper{width:1146px}
 .ice-cream{width:267px; float:left; margin-right:26px;  padding-bottom:40px; position:relative; text-align:center; min-height:323px; z-index:10}
 
-.ice-cream::after{content:""; position:absolute; top:-6px; left:-6px; right:-5px; bottom:-84px; margin:auto; background:rgba(255,255,255,0.3); border-radius:4px; z-index:-1; display:none}
+.ice-cream::after{content:""; position:absolute; top:-6px; left:-6px; right:-5px; bottom:-39px; margin:auto; background:rgba(255,255,255,0.3); border-radius:4px; z-index:-1; display:none}
 
 .ice-link:hover{color:#f7ba9d}
 .ice-link:active{color:#f7ba9d}
@@ -158,7 +158,7 @@ input[type="submit"]:active{ background: -moz-linear-gradient(top,#d84732 0%,#e1
 
 .ice-cream .button:active{background: -moz-linear-gradient(top,#d84732 0%,#e1613e 100%); background:-webkit-linear-gradient(top,#d84732 0%,#e1613e 100%); background: linear-gradient(to bottom,#d84732 0%,#e1613e 100%); box-shadow:inset 0 2px 2px rgba(172,16,0,1)}
 
-.hidden-view{position:absolute;  padding:7px 23px;  bottom:-23px; left:40px; display:none; z-index:100}
+.hidden-view{position:absolute;  padding:7px 23px; bottom: -15px; left:40px; display:none; z-index:100}
 .ice-cream:hover .hidden-view{display:block}
 .ice-cream:hover::after{display:block}
 .ice-cream:hover ~ .ice-cream{ z-index:-2}
